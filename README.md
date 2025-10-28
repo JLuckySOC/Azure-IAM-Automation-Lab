@@ -17,14 +17,12 @@ tenant_id = "[YOUR TENANT ID]"
 authority = f"https://login.microsoftonline.com/{tenant_id}"
 scope = ["https://graph.microsoft.com/.default"]
 
-# Create a confidential client app
 app = msal.ConfidentialClientApplication(
     client_id=client_id,
     authority=authority,
     client_credential=client_secret
 )
 
-# Acquire token
 result = app.acquire_token_for_client(scopes=scope)
 
 if "access_token" in result:
@@ -33,7 +31,6 @@ if "access_token" in result:
 else:
     print("❌ Failed to acquire token:", result.get("error_description"))
 ----------------------------------------
-# Query users
 headers = {"Authorization": f"Bearer {access_token}"}
 users_url = "https://graph.microsoft.com/v1.0/users"
 response = requests.get(users_url, headers=headers)
@@ -59,7 +56,6 @@ import msal
 import requests
 import csv
 
-# Auth setup
 client_id = "[YOUR CLIENT ID]"
 client_secret = "[YOUR CLIENT SECRET]"
 tenant_id = "[YOUR TENANT ID]"
@@ -106,7 +102,6 @@ with open("user_data.csv", newline="") as file:
         if "inactive" in row["Display Name"].lower():
             inactive_users.append(row)
 
-# Log alerts
 with open("inactive_accounts.csv", "w") as alert_file:
     for user in inactive_users:
         alert_file.write(f"ALERT: {user['Display Name']} may be inactive.\n")
