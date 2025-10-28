@@ -14,12 +14,12 @@ This lab simulates an identity audit pipeline using Microsoft Graph API and Pyth
 
 > Email addresses and domain names have been redacted to protect personal information.
 
-![Token Acquired](images/Access Token Call.png)  
-![User Query](images/Query Users.png)  
-![Group Memberships](images/Query Members Of.png)  
-![CSV Export](images/Export CSV.png)  
-![Inactive Alerts](images/Export Innactive Users.png)  
-![Pie Chart](images/Active vs Inactive Users.png)
+- [Token Acquired](images/Access Token Call.png)  
+- [User Query](images/Query Users.png)  
+- [Group Memberships](images/Query Members Of.png)  
+- [CSV Export](images/Export CSV.png)  
+- [Inactive Alerts](images/Export Innactive Users.png)  
+- [Pie Chart](images/Active vs Inactive Users.png)
 
 ## 🧠 Notes
 
