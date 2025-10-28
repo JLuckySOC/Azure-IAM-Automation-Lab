@@ -24,5 +24,4 @@ This lab simulates an identity audit pipeline using Microsoft Graph API and Pyth
 ## 🧠 Notes
 
 - Built entirely on the Microsoft Entra Free tier
-- Ideal for IAM audits, identity hygiene, and operational alerting
-- Future enhancements may include MFA flagging and role-based access analysis
+- Ideal for IAM audits, identity security posture, and operational alerting
